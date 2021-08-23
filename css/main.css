@@ -577,7 +577,12 @@ footer .container .copyright p {
   .aboutme .container .aboutme-showcase .aboutme-main {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+     gap: 4rem;
   }
+  
+    .aboutme .container .aboutme-showcase .aboutme-main .grid-right{
+        position: static;
+    }
   footer {
     height: 80vh;
   }
