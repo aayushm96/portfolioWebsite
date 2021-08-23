@@ -581,8 +581,7 @@ footer .container .copyright p {
         grid-template-columns: 1fr;
   }
   .aboutme .container .aboutme-showcase .aboutme-main .grid-left {
-    z-index: 10;
-    text-align: center;
+   list-style:square;
   }
   footer {
     height: 80vh;
