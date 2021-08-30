@@ -573,6 +573,7 @@ footer .container .copyright p {
     position: relative;
     width: auto;
     margin-bottom: 1.5rem;
+    background-color: transparent;
   }
   .projects .container .project-details > * {
     margin-bottom: 0.5rem;
