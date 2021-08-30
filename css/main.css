@@ -292,6 +292,10 @@ nav ul li i:hover {
   color: #f4f4f4;
 }
 
+.projects .container .project-details p {
+  padding-top: 0.5rem;
+}
+
 .projects .container .project-details ul {
   margin-bottom: 0.4rem;
 }
@@ -425,8 +429,10 @@ nav ul li i:hover {
 .aboutme .container .aboutme-showcase .aboutme-main .grid-left {
   color: #ccd6f6;
   line-height: 2;
-    list-style: square;
-    margin: 0.75rem;
+}
+
+.aboutme .container .aboutme-showcase .aboutme-main .grid-left ul {
+  list-style: square;
 }
 
 .aboutme .container .aboutme-showcase .aboutme-main .grid-right {
@@ -544,7 +550,7 @@ footer .container .copyright p {
     font-size: 2rem;
   }
   span {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   nav {
     display: none;
@@ -577,12 +583,11 @@ footer .container .copyright p {
   .aboutme .container .aboutme-showcase .aboutme-main {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-     gap: 4rem;
   }
-  
-    .aboutme .container .aboutme-showcase .aboutme-main .grid-right{
-        position: static;
-    }
+  .aboutme .container .aboutme-showcase .aboutme-main .grid-left {
+    list-style: square;
+    text-align: center;
+  }
   footer {
     height: 80vh;
   }

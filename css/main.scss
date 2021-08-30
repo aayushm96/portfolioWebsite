@@ -177,6 +177,7 @@ nav{
 
  //--right side of the project  grid which has written info for the proejct
             .project-details{
+                
                 height: fit-content;
                 box-shadow: -11px 11px 20px -4px rgba(0,0,0,0.75); 
                 position: absolute;
@@ -189,6 +190,9 @@ nav{
                 h2{   
                     font-size: 1.5rem;
                     color: #f4f4f4;  
+                }
+                p{
+                    padding-top: 0.5rem;
                 }
                 ul{
                     margin-bottom: 0.4rem;
@@ -422,7 +426,7 @@ footer{
 .quote{
     font-size: 2rem;
 }span{
-    font-size: 3rem;
+    font-size: 2rem;
 
 }
 
