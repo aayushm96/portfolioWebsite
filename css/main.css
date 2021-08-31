@@ -65,10 +65,6 @@ a {
           align-items: center;
 }
 
-span {
-  font-size: 1rem;
-}
-
 .main-hd {
   margin: 2rem auto;
   position: relative;
@@ -78,7 +74,7 @@ span {
 
 span {
   color: white;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 nav {
