@@ -514,30 +514,6 @@ footer .container .copyright p {
   color: #ccd6f6;
 }
 
-@-webkit-keyframes thanks {
-  0% {
-    opacity: .3;
-  }
-  50% {
-    opacity: .5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes thanks {
-  0% {
-    opacity: .3;
-  }
-  50% {
-    opacity: .5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 @media screen and (max-width: 800px) {
   .container {
     max-width: 93vw;
@@ -547,9 +523,6 @@ footer .container .copyright p {
     text-align: center;
   }
   .quote {
-    font-size: 2rem;
-  }
-  span {
     font-size: 2rem;
   }
   nav {

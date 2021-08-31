@@ -384,7 +384,7 @@ footer{
         .copyright{
             height: 20vh;
             a{
-                //display: inline-block;
+                
                 cursor: pointer;
                 img{
                     display: inline-block;
@@ -401,20 +401,6 @@ footer{
 }
 
 
-@keyframes thanks {
-     0%{
-        opacity: .3;
-       
-   }
-   50%{
-       opacity: .5;
-   }
-    100%{
-        
-        opacity: 1;
-     }
-}
-
 @media screen and (max-width:800px) {
     .container{
         max-width:93vw;
@@ -425,11 +411,7 @@ footer{
 }
 .quote{
     font-size: 2rem;
-}span{
-    font-size: 2rem;
-
 }
-
     nav{
         display: none;//for mobile screen
         overflow: visible;
@@ -460,8 +442,7 @@ footer{
         margin-bottom: 0.5rem;
     }
 
-    .aboutme{
-        
+    .aboutme{  
         height: auto;
     }
     .aboutme .container .aboutme-showcase .aboutme-main{
@@ -472,11 +453,6 @@ footer{
         list-style:square;
         text-align: center;
     }
-
-    // .aboutme .container .aboutme-showcase .aboutme-main .grid-right{
-        
-    // width: fit-content;
-    // }
     footer{
         height: 80vh;
     }
