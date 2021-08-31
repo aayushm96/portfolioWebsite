@@ -1,81 +1,75 @@
-$bg-primary:#011f41;
-$bg-secondary:#111;
+$bg-primary: #011f41;
+$bg-secondary: #111;
 $font-color-primary: #ccd6f6;
 $font-color-secondary: #fca311;
-$color-card:rgba(17, 17, 17, 0.89);
+$color-card: rgba(17, 17, 17, 0.89);
 
-*,*::after,*::before{
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
     scroll-padding: 5rem;
 }
-body{
+body {
     background-color: $bg-primary;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
-img{
+img {
     max-width: 100%;
     height: auto;
 }
-ul{
+ul {
     list-style: square;
 }
-a{
+a {
     color: black;
-    text-decoration: none;  
+    text-decoration: none;
 }
 
-
-.text-center{
+.text-center {
     text-align: center;
 }
-.text-left{
+.text-left {
     text-align: left;
 }
-.text-right{
+.text-right {
     text-align: right;
 }
 
-
-.container{
-    
-    max-width:75vw;
+.container {
+    max-width: 75vw;
     margin: 0 auto;
     height: auto;
 }
-.card{
+.card {
     background-color: white;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.flex{
+.flex {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-
 @mixin skill-flex {
     display: flex;
     align-items: center;
-   
-    
 }
 
-.main-hd{
+.main-hd {
     margin: 2rem auto;
     position: relative;
     font-size: 3rem;
     color: $font-color-primary;
-
 }
 
-span{
+span {
     color: white;
 }
-

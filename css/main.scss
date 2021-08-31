@@ -1,7 +1,7 @@
 @import "utilities";
 @import "mediaqueries";
 
-nav{   
+nav {
     text-align: center;
     position: fixed;
     width: 4vw;
@@ -11,38 +11,37 @@ nav{
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    z-index: 9999999;//remove it for the mobile view
-    ul{      
-       border-radius: 1rem;
-       background-color: rgba(128, 128, 128, 0.205);
-       padding: 1rem  0.5rem;
-       li{
-           padding: 1rem 0.1rem; 
-           i{
-               transition: 0.2s ease-in;
-              color: $font-color-primary;       
-           }
-           i:hover{
-               color: $font-color-secondary;
-               transform: scale(1.1);
-           }   
-       }
+    z-index: 9999999; //remove it for the mobile view
+    ul {
+        border-radius: 1rem;
+        background-color: rgba(128, 128, 128, 0.205);
+        padding: 1rem 0.5rem;
+        li {
+            padding: 1rem 0.1rem;
+            i {
+                transition: 0.2s ease-in;
+                color: $font-color-primary;
+            }
+            i:hover {
+                color: $font-color-secondary;
+                transform: scale(1.1);
+            }
+        }
     }
 }
 //vertical link on the right side of the page
-.mail
-{
+.mail {
     writing-mode: vertical-rl;
     position: fixed;
     z-index: 9;
     right: 8%;
     bottom: 0%;
-    a{  
+    a {
         display: inline-block;
         color: #ccd6f6;
         padding: 0.5rem 0.5rem;
         transition: transform 0.2s ease-in;
-        &:hover{
+        &:hover {
             color: $font-color-secondary;
             border: 1px $font-color-secondary dotted;
             transform: translateY(-0.2rem);
@@ -52,11 +51,9 @@ nav{
 
 // the main project section used grid -------------------------
 
-.hero
-{
-    background-color: $bg-primary; 
-    .container
-    {
+.hero {
+    background-color: $bg-primary;
+    .container {
         display: grid;
         justify-content: center;
         align-content: center;
@@ -65,145 +62,123 @@ nav{
         {
             color: $font-color-primary;
             align-self: center;
-            h3{
+            h3 {
                 margin-bottom: 0.5rem;
                 font-size: 2rem;
                 color: #ccd6f6;
             }
-            h2{
+            h2 {
                 font-size: 80px;
                 color: #f4f4f4;
-                
             }
 
-
-            .connect{
-               
+            .connect {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-           .view-projects
-           {
-               a{
-                   display: inline-block;
-                   background-color: $font-color-secondary;
-                   color: $bg-secondary;
-                   padding: .75rem;
-                   font-weight: 700;
-                   transition: all 0.2s ease-in;
-                   &:hover{
-                    background-color: $font-color-primary;
-                    transform: translateY(0.25rem);
-                    
+                .view-projects {
+                    a {
+                        display: inline-block;
+                        background-color: $font-color-secondary;
+                        color: $bg-secondary;
+                        padding: 0.75rem;
+                        font-weight: 700;
+                        transition: all 0.2s ease-in;
+                        &:hover {
+                            background-color: $font-color-primary;
+                            transform: translateY(0.25rem);
+                        }
+                    }
                 }
-               }
-           
-           }
-         
-           .connect-links
-           {              
-               i{   
-                   transition: 0.5s ease-in;margin-right: 0.5rem;
-                   color: $font-color-secondary;
-               }
-               i:hover
-               {
-                transform: translateY(-1rem);
-               }
-           }
-            
+
+                .connect-links {
+                    i {
+                        transition: 0.5s ease-in;
+                        margin-right: 0.5rem;
+                        color: $font-color-secondary;
+                    }
+                    i:hover {
+                        transform: translateY(-1rem);
+                    }
+                }
+            }
         }
-            
-            
-     }
-        
     }
     //resume dwonlaod button from gdrive
-    .download
-    {
-        background-color:whitesmoke;
+    .download {
+        background-color: whitesmoke;
         position: absolute;
         top: 0;
         right: 10%;
         padding: 0.25rem;
-        border-bottom-left-radius:0.5rem;
+        border-bottom-left-radius: 0.5rem;
         border-bottom-right-radius: 0.5rem;
-        i{
+        i {
             color: $bg-primary;
         }
     }
-   
-   
 }
 
-// project section 
-.projects{
-    
+// project section
+.projects {
     color: $font-color-primary;
     background-color: $bg-primary;
-    .container{
-       
-        .project{
+    .container {
+        .project {
             margin-bottom: 1rem;
-           
+
             position: relative;
             display: grid;
             grid-template-columns: 55% auto;
             //gap: 0.5rem;
             padding: 1rem;
 
-           & > :last-child{
-             padding: 1rem;
-                }
+            & > :last-child {
+                padding: 1rem;
+            }
 
- //---------------------------left side of the project tab--------------               
-            .project-screenshot
-            {
-               
+            //---------------------------left side of the project tab--------------
+            .project-screenshot {
                 overflow: hidden;
                 align-self: center;
                 position: relative;
-              .main-img{
-                  img{
-                      object-fit: contain;
-                      display: block;
-                      
-                  }
-              }
-            
-                                            
-            } 
+                .main-img {
+                    img {
+                        object-fit: contain;
+                        display: block;
+                    }
+                }
             }
+        }
 
- //--right side of the project  grid which has written info for the proejct
-            .project-details{
-                
-                height: fit-content;
-                box-shadow: -11px 11px 20px -4px rgba(0,0,0,0.75); 
-                position: absolute;
-                right: 0;
-                width:40vw;
-                z-index: 9999999;
-                align-self: center;
-                background-color: $color-card;
-               
-                h2{   
-                    font-size: 1.5rem;
-                    color: #f4f4f4;  
+        //--right side of the project  grid which has written info for the proejct
+        .project-details {
+            height: fit-content;
+            box-shadow: -11px 11px 20px -4px rgba(0, 0, 0, 0.75);
+            position: absolute;
+            right: 0;
+            width: 40vw;
+            z-index: 9999999;
+            align-self: center;
+            background-color: $color-card;
+
+            h2 {
+                font-size: 1.5rem;
+                color: #f4f4f4;
+            }
+            p {
+                padding-top: 0.5rem;
+            }
+            ul {
+                margin-bottom: 0.4rem;
+                li {
+                    font-size: 13px;
+                    display: inline-block;
                 }
-                p{
-                    padding-top: 0.5rem;
-                }
-                ul{
-                    margin-bottom: 0.4rem;
-                    li{
-                       font-size: 13px;
-                       display: inline-block;
-                    }     
-                }
-                .project-view{
-                    margin-top: 1rem;
-                    a{
+            }
+            .project-view {
+                margin-top: 1rem;
+                a {
                     display: inline-block;
                     border-radius: 5px;
                     margin-right: 0.5rem;
@@ -211,49 +186,45 @@ nav{
                     background-color: $font-color-secondary;
                     color: $bg-secondary;
                     transition: 0.2s ease-in;
-                    &:hover{
+                    &:hover {
                         background-color: #f4f4f4;
-                        transform: translateY(.25rem);
+                        transform: translateY(0.25rem);
                     }
                 }
-              }
             }
         }
     }
-
+}
 
 ///----------------------------------------------------------------------------------------------------------------------------------------------------------------------
- .more-projects{
-     
-     .container{
-         .more{
-             display: inline-block;
-             margin-top: 4rem;
-             margin-bottom: 4rem;
-             padding: 0.5rem;
-             background-color: $bg-primary;
-             color: $font-color-primary;
-             font-size: 2rem;
-             border: 2px $font-color-primary solid;
-         }
-         .project-showcase{
-          display: grid;
-          grid-template-columns: 1fr 1fr 1fr;
-          grid-template-rows: 1fr 1fr;
-          gap: 2rem;
-         }
-        
-     }
- }
+.more-projects {
+    .container {
+        .more {
+            display: inline-block;
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+            padding: 0.5rem;
+            background-color: $bg-primary;
+            color: $font-color-primary;
+            font-size: 2rem;
+            border: 2px $font-color-primary solid;
+        }
+        .project-showcase {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 2rem;
+        }
+    }
+}
 
 //skils showacase--------------------------------------------------------------
 
-.skills{
- background-color: $bg-primary; 
-    .container{
-       
+.skills {
+    background-color: $bg-primary;
+    .container {
         color: $font-color-primary;
-        .skill-showcase{
+        .skill-showcase {
             padding-top: 4rem;
             padding-bottom: 4rem;
             color: $font-color-secondary;
@@ -262,204 +233,179 @@ nav{
             gap: 1.75rem;
             width: fit-content;
             margin: 0 auto;
-           .flex-card:nth-child(1){
-               @include skill-flex;
-               width: 40vw;
-               justify-content: space-between;  
-           }
-           .flex-card:nth-child(2){
-            @include skill-flex;
-            width: 40vw;
-            justify-content: space-evenly;
-        }
-        .flex-card:nth-child(3){
-            @include skill-flex;
-            width: 40vw;
-            justify-content: center;
-        } 
-                       
+            .flex-card:nth-child(1) {
+                @include skill-flex;
+                width: 40vw;
+                justify-content: space-between;
+            }
+            .flex-card:nth-child(2) {
+                @include skill-flex;
+                width: 40vw;
+                justify-content: space-evenly;
+            }
+            .flex-card:nth-child(3) {
+                @include skill-flex;
+                width: 40vw;
+                justify-content: center;
+            }
         }
     }
 }
 
-
-
-.aboutme{
+.aboutme {
     z-index: 10;
     height: 100vh;
     background-color: $bg-primary;
-    .container{
-        
-        .aboutme-showcase
-        {
-            .quote{
+    .container {
+        .aboutme-showcase {
+            .quote {
                 font-size: 2rem;
                 color: $font-color-secondary;
                 margin-bottom: 6rem;
-                letter-spacing: 2px;   
+                letter-spacing: 2px;
             }
-           .aboutme-main{
-               display: grid;
-               grid-template-columns: 2fr auto;
-               gap: 0.5rem;
+            .aboutme-main {
+                display: grid;
+                grid-template-columns: 2fr auto;
+                gap: 0.5rem;
 
-              
-               .grid-left{
-                   color: $font-color-primary;
-                   line-height: 2;
-                   ul{                 
-                    list-style: square;
-                   
+                .grid-left {
+                    color: $font-color-primary;
+                    line-height: 2;
+                    ul {
+                        list-style: square;
                     }
-                 
-                    }
-                 
-           .grid-right{
-               position: relative;
-               top: 60%;
-               box-shadow: -11px 11px 20px -4px rgba(0, 0, 0, 0.75);
-               line-height: 2;
-               border-radius: 10px;
-               padding: 0.5rem;
-               background-color: #f4f4f4;
-               color: black;
-               height: fit-content;
-               width: fit-content;
-               justify-self: center;
-               h2{
-                   border-bottom: 2px $font-color-secondary solid;
-                   margin-bottom: 0.5rem;
+                }
 
-               }
-               i{
-                  
-                   line-height: 1.2;
-                   text-align: center;
-                   display: inline-block;
-                   min-width: 36px;
-                   vertical-align: middle;
-                   margin-right: 0.25rem;
-                   color: $bg-primary;
-               }
-               
-             
-           }
+                .grid-right {
+                    position: relative;
+                    top: 60%;
+                    box-shadow: -11px 11px 20px -4px rgba(0, 0, 0, 0.75);
+                    line-height: 2;
+                    border-radius: 10px;
+                    padding: 0.5rem;
+                    background-color: #f4f4f4;
+                    color: black;
+                    height: fit-content;
+                    width: fit-content;
+                    justify-self: center;
+                    h2 {
+                        border-bottom: 2px $font-color-secondary solid;
+                        margin-bottom: 0.5rem;
+                    }
+                    i {
+                        line-height: 1.2;
+                        text-align: center;
+                        display: inline-block;
+                        min-width: 36px;
+                        vertical-align: middle;
+                        margin-right: 0.25rem;
+                        color: $bg-primary;
+                    }
+                }
+            }
         }
     }
 }
-}
 
-
-
-
-
-
-footer{
+footer {
     margin: 2rem 0 auto;
     background-color: $bg-primary;
-   // height: 100vh;
-   // height: 100vh;
-    .container{
-        
-        .footer-animation{
-           // height: 55vh;
-            .box{
+    // height: 100vh;
+    // height: 100vh;
+    .container {
+        .footer-animation {
+            // height: 55vh;
+            .box {
                 height: 80vh;
                 display: flex;
                 border-radius: 50%;
                 justify-content: center;
                 align-items: center;
-               // margin: 0 auto;
-               span{
-                   
-                   
-                   color: $font-color-secondary;
-                //   animation: thanks 0.1s linear infinite;
-                   
-               }
-                
+                // margin: 0 auto;
+                span {
+                    color: $font-color-secondary;
+                    //   animation: thanks 0.1s linear infinite;
+                }
             }
-          
         }
-        .copyright{
+        .copyright {
             height: 20vh;
-            a{
-                
+            a {
                 cursor: pointer;
-                img{
+                img {
                     display: inline-block;
                     width: 4rem;
                     transform: rotate(316deg);
                 }
             }
-            p{
+            p {
                 margin-top: 2rem;
                 margin-bottom: 2rem;
-            color: $font-color-primary;
+                color: $font-color-primary;
             }
-        }    }
+        }
+    }
 }
 
-
-@media screen and (max-width:800px) {
-    .container{
-        max-width:93vw;
+@media screen and (max-width: 800px) {
+    .container {
+        max-width: 93vw;
     }
-.main-hd{
-    font-size: 3rem;
-    text-align: center;
-}
-.quote{
-    font-size: 2rem;
-}
-    nav{
-        display: none;//for mobile screen
+    .main-hd {
+        font-size: 3rem;
+        text-align: center;
+    }
+    .quote {
+        font-size: 2rem;
+    }
+    nav {
+        display: none; //for mobile screen
         overflow: visible;
-        width: 0;     
+        width: 0;
     }
-    nav li i{
+    nav li i {
         overflow: visible;
     }
-    .mail{
+    .mail {
         right: -0.5rem;
-       
     }
-    .skills .container .skill-showcase .flex-card:nth-child(1),.skills .container .skill-showcase .flex-card:nth-child(2),.skills .container .skill-showcase .flex-card:nth-child(3){
-       width: 80vw;
-    }  
-    
-   
-    .projects .container .project{
+    .skills .container .skill-showcase .flex-card:nth-child(1),
+    .skills .container .skill-showcase .flex-card:nth-child(2),
+    .skills .container .skill-showcase .flex-card:nth-child(3) {
+        width: 80vw;
+    }
+
+    .projects .container .project {
         display: block;
     }
-    .projects .container .project-details{
+    .projects .container .project-details {
         position: relative;
         width: auto;
         margin-bottom: 1.5rem;
         background-color: transparent;
     }
-    .projects .container .project-details > *{
+    .projects .container .project-details > * {
         margin-bottom: 0.5rem;
     }
 
-    .aboutme{  
+    .aboutme {
         height: auto;
     }
-    .aboutme .container .aboutme-showcase .aboutme-main{
+    .aboutme .container .aboutme-showcase .aboutme-main {
         grid-template-columns: 1fr;
-    
     }
-    .aboutme .container .aboutme-showcase .aboutme-main .grid-left{
-        list-style:square;
+    .aboutme .container .aboutme-showcase .aboutme-main .grid-left {
+        list-style: square;
         text-align: center;
     }
-    footer{
+    footer {
         height: 80vh;
     }
-    footer .box{
+    footer .box {
         height: 70vh;
     }
-    footer .copyright{
+    footer .copyright {
         height: 10vh;
     }
 }

@@ -1,4 +1,6 @@
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -12,7 +14,7 @@ html {
 
 body {
   background-color: #011f41;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 img {
@@ -100,7 +102,7 @@ nav {
 nav ul {
   border-radius: 1rem;
   background-color: rgba(128, 128, 128, 0.205);
-  padding: 1rem  0.5rem;
+  padding: 1rem 0.5rem;
 }
 
 nav ul li {
@@ -195,7 +197,7 @@ nav ul li i:hover {
   display: inline-block;
   background-color: #fca311;
   color: #111;
-  padding: .75rem;
+  padding: 0.75rem;
   font-weight: 700;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
@@ -535,7 +537,9 @@ footer .container .copyright p {
   .mail {
     right: -0.5rem;
   }
-  .skills .container .skill-showcase .flex-card:nth-child(1), .skills .container .skill-showcase .flex-card:nth-child(2), .skills .container .skill-showcase .flex-card:nth-child(3) {
+  .skills .container .skill-showcase .flex-card:nth-child(1),
+  .skills .container .skill-showcase .flex-card:nth-child(2),
+  .skills .container .skill-showcase .flex-card:nth-child(3) {
     width: 80vw;
   }
   .projects .container .project {
