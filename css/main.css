@@ -301,6 +301,10 @@ nav ul li i:hover {
   display: inline-block;
 }
 
+.projects .container .project-details .project-view {
+  margin-top: 1rem;
+}
+
 .projects .container .project-details .project-view a {
   display: inline-block;
   border-radius: 5px;
