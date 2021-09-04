@@ -2,7 +2,7 @@ $bg-primary: #011f41;
 $bg-secondary: #111;
 $font-color-primary: #ccd6f6;
 $font-color-secondary: #fca311;
-$color-card: rgba(17, 17, 17, 0.89);
+$color-card: #111;
 
 *,
 *::after,
@@ -15,6 +15,22 @@ $color-card: rgba(17, 17, 17, 0.89);
 html {
     scroll-behavior: smooth;
     scroll-padding: 5rem;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-button{
+    border-radius: 20px;
+    background-color: $font-color-secondary;  
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background-color: $font-color-secondary;
+}
+::-webkit-scrollbar-track{
+    border-radius: 20px;
+    background-color: $font-color-primary;
 }
 body {
     background-color: $bg-primary;

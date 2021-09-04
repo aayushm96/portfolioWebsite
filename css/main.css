@@ -12,6 +12,25 @@ html {
   scroll-padding: 5rem;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-button {
+  border-radius: 20px;
+  background-color: #fca311;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: #fca311;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 20px;
+  background-color: #ccd6f6;
+}
+
 body {
   background-color: #011f41;
   font-family: "Montserrat", sans-serif;
@@ -96,11 +115,10 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  z-index: 9999999;
 }
 
 nav ul {
-  border-radius: 1rem;
+  border-radius: 2rem;
   background-color: rgba(128, 128, 128, 0.205);
   padding: 1rem 0.5rem;
 }
@@ -277,11 +295,11 @@ nav ul li i:hover {
   position: absolute;
   right: 0;
   width: 40vw;
-  z-index: 9999999;
+  z-index: 9;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  background-color: rgba(17, 17, 17, 0.89);
+  background-color: #111;
 }
 
 .projects .container .project-details h2 {
@@ -304,10 +322,15 @@ nav ul li i:hover {
 
 .projects .container .project-details .project-view {
   margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .projects .container .project-details .project-view a {
-  display: inline-block;
   border-radius: 5px;
   margin-right: 0.5rem;
   padding: 0.5rem 1rem;
