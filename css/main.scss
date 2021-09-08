@@ -22,8 +22,8 @@ nav {
                 transition: 0.2s ease-in;
                 color: $font-color-primary;
             }
-            i:hover{
-                color:$font-color-secondary;
+            i:hover {
+                color: $font-color-secondary;
                 transform: scale(1.1);
             }
         }
@@ -60,6 +60,8 @@ nav {
         height: 100vh;
         .intro //my main page
         {
+            position: relative;
+            animation: movement 8s linear infinite alternate-reverse;
             color: $font-color-primary;
             align-self: center;
             h3 {
@@ -179,8 +181,15 @@ nav {
                 margin-top: 1rem;
                 display: flex;
                 //background-color: $bg-primary;
-                justify-content: space-between;
+                justify-content: flex-end;
+                a:last-child {
+                    background-color: $font-color-primary;
+                }
+                a:last-child:hover{
+                    background-color: $font-color-secondary;
+                }
                 a {
+                    font-weight: 700;
                     border-radius: 5px;
                     margin-right: 0.5rem;
                     padding: 0.5rem 1rem;
@@ -349,6 +358,15 @@ footer {
     }
 }
 
+@keyframes movement {
+    0% {
+        bottom: 0;
+    }
+    100% {
+        bottom: 50px;
+    }
+}
+
 @media screen and (max-width: 800px) {
     .container {
         max-width: 93vw;
@@ -389,7 +407,9 @@ footer {
     .projects .container .project-details > * {
         margin-bottom: 0.5rem;
     }
-
+    .projects .container .project-details .project-view{
+        justify-content: space-between;
+    }
     .aboutme {
         height: auto;
     }

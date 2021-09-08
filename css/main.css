@@ -182,6 +182,8 @@ nav ul li i:hover {
 }
 
 .hero .container .intro {
+  position: relative;
+  animation: movement 8s linear infinite alternate-reverse;
   color: #ccd6f6;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -325,12 +327,21 @@ nav ul li i:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.projects .container .project-details .project-view a:last-child {
+  background-color: #ccd6f6;
+}
+
+.projects .container .project-details .project-view a:last-child:hover {
+  background-color: #fca311;
 }
 
 .projects .container .project-details .project-view a {
+  font-weight: 700;
   border-radius: 5px;
   margin-right: 0.5rem;
   padding: 0.5rem 1rem;
@@ -538,6 +549,24 @@ footer .container .copyright p {
   color: #ccd6f6;
 }
 
+@-webkit-keyframes movement {
+  0% {
+    bottom: 0;
+  }
+  100% {
+    bottom: 50px;
+  }
+}
+
+@keyframes movement {
+  0% {
+    bottom: 0;
+  }
+  100% {
+    bottom: 50px;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .container {
     max-width: 93vw;
@@ -576,6 +605,11 @@ footer .container .copyright p {
   }
   .projects .container .project-details > * {
     margin-bottom: 0.5rem;
+  }
+  .projects .container .project-details .project-view {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .aboutme {
     height: auto;
