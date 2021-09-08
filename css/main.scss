@@ -13,6 +13,7 @@ nav {
     flex-direction: column;
 
     ul {
+        list-style: none;
         border-radius: 2rem;
         background-color: rgba(128, 128, 128, 0.205);
         padding: 1rem 0.5rem;
@@ -161,7 +162,7 @@ nav {
             width: 40vw;
             z-index: 9;
             align-self: center;
-            background-color: $color-card;
+            background-color: $project-card;
 
             h2 {
                 font-size: 1.5rem;
@@ -284,6 +285,10 @@ nav {
                     line-height: 2;
                     ul {
                         list-style: square;
+                        li::marker{
+                            padding-left: 0.25rem;
+                            color: $font-color-secondary;
+                        }
                     }
                 }
 
@@ -402,7 +407,7 @@ footer {
         position: relative;
         width: auto;
         margin-bottom: 1.5rem;
-        background-color: transparent;
+        //background-color: transparent;
     }
     .projects .container .project-details > * {
         margin-bottom: 0.5rem;
