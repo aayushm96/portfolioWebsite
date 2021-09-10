@@ -32,6 +32,7 @@ nav {
 }
 //vertical link on the right side of the page
 .mail {
+    
     writing-mode: vertical-rl;
     position: fixed;
     z-index: 9;
@@ -48,6 +49,7 @@ nav {
             transform: translateY(-0.2rem);
         }
     }
+    animation: mailpopup .5s ease-in;
 }
 
 // the main project section used grid -------------------------
@@ -62,7 +64,7 @@ nav {
         .intro //my main page
         {
             position: relative;
-            animation: movement 8s linear infinite alternate-reverse;
+            animation: movement 8s linear infinite alternate-reverse,heropopup 1s ease-in;
             color: $font-color-primary;
             align-self: center;
             h3 {
@@ -81,6 +83,7 @@ nav {
                 align-items: center;
                 .view-projects {
                     a {
+                        animation: heropopup 2s ease-in;
                         display: inline-block;
                         background-color: $font-color-secondary;
                         color: $bg-secondary;
@@ -119,6 +122,7 @@ nav {
         i {
             color: $bg-primary;
         }
+        animation: downloadpopup .5s ease-in;
     }
 }
 
@@ -128,6 +132,7 @@ nav {
     background-color: $bg-primary;
     .container {
         .project {
+            animation: projectpopup .5s ease-in;
             margin-bottom: 1rem;
             position: relative;
             display: grid;

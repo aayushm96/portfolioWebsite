@@ -93,6 +93,102 @@ span {
   color: white;
 }
 
+@-webkit-keyframes downloadpopup {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes downloadpopup {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes mailpopup {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes mailpopup {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes heropopup {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes heropopup {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes projectpopup {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes projectpopup {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
 nav {
   text-align: center;
   position: fixed;
@@ -144,6 +240,8 @@ nav ul li i:hover {
   z-index: 9;
   right: 8%;
   bottom: 0%;
+  -webkit-animation: mailpopup .5s ease-in;
+          animation: mailpopup .5s ease-in;
 }
 
 .mail a {
@@ -180,7 +278,8 @@ nav ul li i:hover {
 
 .hero .container .intro {
   position: relative;
-  animation: movement 8s linear infinite alternate-reverse;
+  -webkit-animation: movement 8s linear infinite alternate-reverse,heropopup 1s ease-in;
+          animation: movement 8s linear infinite alternate-reverse,heropopup 1s ease-in;
   color: #ccd6f6;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -211,6 +310,8 @@ nav ul li i:hover {
 }
 
 .hero .container .intro .connect .view-projects a {
+  -webkit-animation: heropopup 2s ease-in;
+          animation: heropopup 2s ease-in;
   display: inline-block;
   background-color: #fca311;
   color: #111;
@@ -246,6 +347,8 @@ nav ul li i:hover {
   padding: 0.25rem;
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
+  -webkit-animation: downloadpopup .5s ease-in;
+          animation: downloadpopup .5s ease-in;
 }
 
 .hero .download i {
@@ -258,6 +361,8 @@ nav ul li i:hover {
 }
 
 .projects .container .project {
+  -webkit-animation: projectpopup .5s ease-in;
+          animation: projectpopup .5s ease-in;
   margin-bottom: 1rem;
   position: relative;
   display: -ms-grid;
