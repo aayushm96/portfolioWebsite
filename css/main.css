@@ -41,6 +41,13 @@ img {
   height: auto;
 }
 
+h1 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-bottom: #fca311 2px solid;
+}
+
 a {
   color: black;
   text-decoration: none;
@@ -629,6 +636,10 @@ footer .container .footer-animation .box {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+footer .container .footer-animation .box h1 {
+  border: none;
 }
 
 footer .container .footer-animation .box span {

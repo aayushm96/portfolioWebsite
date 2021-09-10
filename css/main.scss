@@ -2,6 +2,7 @@
 @import "mediaqueries";
 
 nav {
+   
     text-align: center;
     position: fixed;
     width: 4vw;
@@ -337,6 +338,9 @@ footer {
         .footer-animation {
             // height: 55vh;
             .box {
+                h1{
+                    border: none;
+                }
                 height: 80vh;
                 display: flex;
                 border-radius: 50%;

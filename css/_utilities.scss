@@ -41,6 +41,11 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+h1{
+    width: fit-content;
+    border-bottom: $font-color-secondary 2px solid;
+}
 ul {
    // list-style: none;
 }
