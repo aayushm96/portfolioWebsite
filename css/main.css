@@ -209,6 +209,42 @@ span {
   }
 }
 
+@-webkit-keyframes movement {
+  0% {
+    bottom: 0;
+  }
+  100% {
+    bottom: 50px;
+  }
+}
+
+@keyframes movement {
+  0% {
+    bottom: 0;
+  }
+  100% {
+    bottom: 50px;
+  }
+}
+
+@-webkit-keyframes movementr {
+  100% {
+    bottom: 0;
+  }
+  0% {
+    bottom: 50px;
+  }
+}
+
+@keyframes movementr {
+  100% {
+    bottom: 0;
+  }
+  0% {
+    bottom: 50px;
+  }
+}
+
 [data-scroll] {
   -webkit-transition: all 2s;
   transition: all 2s;
@@ -695,42 +731,6 @@ footer .container .copyright p {
   margin-top: 2rem;
   margin-bottom: 2rem;
   color: #ccd6f6;
-}
-
-@-webkit-keyframes movement {
-  0% {
-    bottom: 0;
-  }
-  100% {
-    bottom: 50px;
-  }
-}
-
-@keyframes movement {
-  0% {
-    bottom: 0;
-  }
-  100% {
-    bottom: 50px;
-  }
-}
-
-@-webkit-keyframes movementr {
-  100% {
-    bottom: 0;
-  }
-  0% {
-    bottom: 50px;
-  }
-}
-
-@keyframes movementr {
-  100% {
-    bottom: 0;
-  }
-  0% {
-    bottom: 50px;
-  }
 }
 
 @media screen and (max-width: 800px) {

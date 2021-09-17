@@ -373,23 +373,6 @@ footer {
     }
 }
 
-@keyframes movement {
-    0% {
-        bottom: 0;
-    }
-    100% {
-        bottom: 50px;
-    }
-}
-@keyframes movementr {
-    100% {
-        bottom: 0;
-    }
-    0% {
-        bottom: 50px;
-    }
-}
-
 @media screen and (max-width: 800px) {
     .container {
         max-width: 93vw;
