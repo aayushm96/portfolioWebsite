@@ -277,8 +277,8 @@ nav ul li i:hover {
   z-index: 9;
   right: 8%;
   bottom: 0%;
-  -webkit-animation: movementr 8s linear infinite alternate-reverse,heropopup 1s ease-in;
-          animation: movementr 8s linear infinite alternate-reverse,heropopup 1s ease-in;
+  -webkit-animation: movementr 8s linear infinite alternate-reverse, heropopup 1s ease-in;
+          animation: movementr 8s linear infinite alternate-reverse, heropopup 1s ease-in;
 }
 
 .mail a {
@@ -315,8 +315,9 @@ nav ul li i:hover {
 
 .hero .container .intro {
   position: relative;
-  -webkit-animation: movement 8s linear infinite alternate-reverse,heropopup 1s ease-in;
-          animation: movement 8s linear infinite alternate-reverse,heropopup 1s ease-in;
+  padding: 1rem;
+  -webkit-animation: movement 8s linear infinite alternate-reverse, heropopup 1s ease-in;
+          animation: movement 8s linear infinite alternate-reverse, heropopup 1s ease-in;
   color: #ccd6f6;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -384,8 +385,8 @@ nav ul li i:hover {
   padding: 0.25rem;
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
-  -webkit-animation: downloadpopup .5s ease-in;
-          animation: downloadpopup .5s ease-in;
+  -webkit-animation: downloadpopup 0.5s ease-in;
+          animation: downloadpopup 0.5s ease-in;
 }
 
 .hero .download i {

@@ -2,7 +2,6 @@
 @import "mediaqueries";
 
 nav {
-   
     text-align: center;
     position: fixed;
     width: 4vw;
@@ -33,7 +32,6 @@ nav {
 }
 //vertical link on the right side of the page
 .mail {
-    
     writing-mode: vertical-rl;
     position: fixed;
     z-index: 9;
@@ -50,7 +48,7 @@ nav {
             transform: translateY(-0.2rem);
         }
     }
-    animation: movementr 8s linear infinite alternate-reverse,heropopup 1s ease-in;
+    animation: movementr 8s linear infinite alternate-reverse, heropopup 1s ease-in;
     //animation: mailpopup .5s ease-in;
 }
 
@@ -66,7 +64,8 @@ nav {
         .intro //my main page
         {
             position: relative;
-            animation: movement 8s linear infinite alternate-reverse,heropopup 1s ease-in;
+            padding: 1rem;
+            animation: movement 8s linear infinite alternate-reverse, heropopup 1s ease-in;
             color: $font-color-primary;
             align-self: center;
             h3 {
@@ -124,7 +123,7 @@ nav {
         i {
             color: $bg-primary;
         }
-        animation: downloadpopup .5s ease-in;
+        animation: downloadpopup 0.5s ease-in;
     }
 }
 
@@ -193,7 +192,7 @@ nav {
                 a:last-child {
                     background-color: $font-color-primary;
                 }
-                a:last-child:hover{
+                a:last-child:hover {
                     background-color: $font-color-secondary;
                 }
                 a {
@@ -292,7 +291,7 @@ nav {
                     line-height: 2;
                     ul {
                         list-style: square;
-                        li::marker{
+                        li::marker {
                             padding-left: 0.25rem;
                             color: $font-color-secondary;
                         }
@@ -339,7 +338,7 @@ footer {
         .footer-animation {
             // height: 55vh;
             .box {
-                h1{
+                h1 {
                     border: none;
                 }
                 height: 80vh;
@@ -383,7 +382,7 @@ footer {
     }
 }
 @keyframes movementr {
-   100% {
+    100% {
         bottom: 0;
     }
     0% {
@@ -431,7 +430,7 @@ footer {
     .projects .container .project-details > * {
         margin-bottom: 0.5rem;
     }
-    .projects .container .project-details .project-view{
+    .projects .container .project-details .project-view {
         justify-content: space-between;
     }
     .aboutme {
