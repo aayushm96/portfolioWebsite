@@ -50,7 +50,7 @@ nav {
             transform: translateY(-0.2rem);
         }
     }
-    animation: movement 8s linear infinite alternate-reverse,heropopup 1s ease-in;
+    animation: movementr 8s linear infinite alternate-reverse,heropopup 1s ease-in;
     //animation: mailpopup .5s ease-in;
 }
 
@@ -379,6 +379,14 @@ footer {
         bottom: 0;
     }
     100% {
+        bottom: 50px;
+    }
+}
+@keyframes movementr {
+   100% {
+        bottom: 0;
+    }
+    0% {
         bottom: 50px;
     }
 }
