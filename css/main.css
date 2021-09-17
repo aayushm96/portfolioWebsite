@@ -113,6 +113,11 @@ span {
   color: white;
 }
 
+#hi {
+  font-size: 2.5rem;
+  color: #fca311;
+}
+
 @-webkit-keyframes downloadpopup {
   from {
     opacity: 0;
@@ -384,8 +389,6 @@ nav ul li i:hover {
 }
 
 .hero .container .intro .connect .view-projects a {
-  -webkit-animation: heropopup 2s ease-in;
-          animation: heropopup 2s ease-in;
   display: inline-block;
   background-color: #fca311;
   color: #111;
