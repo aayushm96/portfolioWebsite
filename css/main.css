@@ -197,6 +197,23 @@ span {
   }
 }
 
+[data-scroll] {
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+[data-scroll="in"] {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+[data-scroll="out"] {
+  opacity: 0;
+  -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
+}
+
 nav {
   text-align: center;
   position: fixed;
@@ -369,8 +386,6 @@ nav ul li i:hover {
 }
 
 .projects .container .project {
-  -webkit-animation: projectpopup .5s ease-in;
-          animation: projectpopup .5s ease-in;
   margin-bottom: 1rem;
   position: relative;
   display: -ms-grid;

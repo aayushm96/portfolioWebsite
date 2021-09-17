@@ -46,9 +46,7 @@ h1{
     width: fit-content;
     border-bottom: $font-color-secondary 2px solid;
 }
-ul {
-   // list-style: none;
-}
+
 a {
     color: black;
     text-decoration: none;
@@ -138,4 +136,19 @@ span {
         opacity: 1;
         transform: translateX(0);
     }
+}
+
+
+[data-scroll]{
+    transition: all 2s;
+}
+
+[data-scroll="in"]{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+[data-scroll="out"]{
+    opacity: 0;
+    transform: translateX(-100px);
 }
