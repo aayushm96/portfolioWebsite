@@ -118,6 +118,23 @@ span {
   color: #fca311;
 }
 
+[data-scroll] {
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+[data-scroll="in"] {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+[data-scroll="out"] {
+  opacity: 0;
+  -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
+}
+
 @-webkit-keyframes downloadpopup {
   from {
     opacity: 0;
@@ -248,23 +265,6 @@ span {
   0% {
     bottom: 50px;
   }
-}
-
-[data-scroll] {
-  -webkit-transition: all 2s;
-  transition: all 2s;
-}
-
-[data-scroll="in"] {
-  opacity: 1;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-}
-
-[data-scroll="out"] {
-  opacity: 0;
-  -webkit-transform: translateX(-100px);
-          transform: translateX(-100px);
 }
 
 nav {
