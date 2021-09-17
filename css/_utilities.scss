@@ -3,7 +3,7 @@ $bg-secondary: #111;
 $font-color-primary: #ccd6f6;
 $font-color-secondary: #fca311;
 $color-card: #111;
-$project-card:#20272e98;
+$project-card: #20272e98;
 
 *,
 *::after,
@@ -18,18 +18,18 @@ html {
     scroll-padding: 5rem;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 10px;
 }
-::-webkit-scrollbar-button{
-    border-radius: 20px;
-    background-color: $font-color-secondary;  
-}
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-button {
     border-radius: 20px;
     background-color: $font-color-secondary;
 }
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-color: $font-color-secondary;
+}
+::-webkit-scrollbar-track {
     border-radius: 20px;
     background-color: $font-color-primary;
 }
@@ -42,9 +42,9 @@ img {
     height: auto;
 }
 
-h1{
+h1 {
     width: fit-content;
-    border-bottom: $font-color-secondary 2px solid;
+    // border-bottom: $font-color-secondary 2px solid;
 }
 
 a {
@@ -84,71 +84,79 @@ a {
 }
 
 .main-hd {
-    padding: 0 2rem;
     margin: 2rem auto;
     position: relative;
     font-size: 3rem;
     color: $font-color-primary;
+    &::after {
+        content: "";
+        display: block;
+        width: 40%;
+        text-align: center;
+        height: 2px;
+        background: #fca311;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -10px;
+        position: absolute;
+    }
 }
 
 span {
     color: white;
 }
 
-@keyframes downloadpopup{
-    from{
+@keyframes downloadpopup {
+    from {
         opacity: 0;
         transform: translateY(-200px);
     }
-    to{
+    to {
         opacity: 1;
         transform: translateY(0);
     }
 }
-@keyframes mailpopup{
-    from{
+@keyframes mailpopup {
+    from {
         opacity: 0;
         transform: translateY(200px);
     }
-    to{
+    to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-@keyframes heropopup{
-    from{
+@keyframes heropopup {
+    from {
         opacity: 0;
-       
     }
-    to{
+    to {
         opacity: 1;
-       
     }
 }
 
-@keyframes projectpopup{
-    from{
+@keyframes projectpopup {
+    from {
         opacity: 0;
         transform: translateX(-200px);
     }
-    to{
+    to {
         opacity: 1;
         transform: translateX(0);
     }
 }
 
-
-[data-scroll]{
+[data-scroll] {
     transition: all 2s;
 }
 
-[data-scroll="in"]{
+[data-scroll="in"] {
     opacity: 1;
     transform: translateX(0);
 }
 
-[data-scroll="out"]{
+[data-scroll="out"] {
     opacity: 0;
     transform: translateX(-100px);
 }

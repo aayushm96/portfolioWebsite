@@ -45,7 +45,6 @@ h1 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  border-bottom: #fca311 2px solid;
 }
 
 a {
@@ -90,11 +89,24 @@ a {
 }
 
 .main-hd {
-  padding: 0 2rem;
   margin: 2rem auto;
   position: relative;
   font-size: 3rem;
   color: #ccd6f6;
+}
+
+.main-hd::after {
+  content: "";
+  display: block;
+  width: 40%;
+  text-align: center;
+  height: 2px;
+  background: #fca311;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: -10px;
+  position: absolute;
 }
 
 span {
