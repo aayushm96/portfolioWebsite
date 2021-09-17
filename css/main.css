@@ -90,6 +90,7 @@ a {
 }
 
 .main-hd {
+  padding: 0 2rem;
   margin: 2rem auto;
   position: relative;
   font-size: 3rem;
@@ -247,8 +248,8 @@ nav ul li i:hover {
   z-index: 9;
   right: 8%;
   bottom: 0%;
-  -webkit-animation: mailpopup .5s ease-in;
-          animation: mailpopup .5s ease-in;
+  -webkit-animation: movement 8s linear infinite alternate-reverse,heropopup 1s ease-in;
+          animation: movement 8s linear infinite alternate-reverse,heropopup 1s ease-in;
 }
 
 .mail a {
@@ -295,7 +296,7 @@ nav ul li i:hover {
 
 .hero .container .intro h3 {
   margin-bottom: 0.5rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #ccd6f6;
 }
 
@@ -556,7 +557,7 @@ nav ul li i:hover {
 }
 
 .aboutme .container .aboutme-showcase .quote {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #fca311;
   margin-bottom: 6rem;
   letter-spacing: 2px;
@@ -662,6 +663,7 @@ footer .container .copyright a img {
 }
 
 footer .container .copyright p {
+  font-size: 0.75rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
   color: #ccd6f6;

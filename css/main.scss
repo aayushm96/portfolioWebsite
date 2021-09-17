@@ -50,7 +50,8 @@ nav {
             transform: translateY(-0.2rem);
         }
     }
-    animation: mailpopup .5s ease-in;
+    animation: movement 8s linear infinite alternate-reverse,heropopup 1s ease-in;
+    //animation: mailpopup .5s ease-in;
 }
 
 // the main project section used grid -------------------------
@@ -70,7 +71,7 @@ nav {
             align-self: center;
             h3 {
                 margin-bottom: 0.5rem;
-                font-size: 2rem;
+                font-size: 1.5rem;
                 color: #ccd6f6;
             }
             h2 {
@@ -276,7 +277,7 @@ nav {
     .container {
         .aboutme-showcase {
             .quote {
-                font-size: 2rem;
+                font-size: 1.5rem;
                 color: $font-color-secondary;
                 margin-bottom: 6rem;
                 letter-spacing: 2px;
@@ -364,6 +365,7 @@ footer {
                 }
             }
             p {
+                font-size: 0.75rem;
                 margin-top: 2rem;
                 margin-bottom: 2rem;
                 color: $font-color-primary;
