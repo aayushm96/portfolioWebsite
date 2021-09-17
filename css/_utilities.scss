@@ -18,21 +18,6 @@ html {
     scroll-padding: 5rem;
 }
 
-::-webkit-scrollbar {
-    width: 10px;
-}
-::-webkit-scrollbar-button {
-    border-radius: 20px;
-    background-color: $font-color-secondary;
-}
-::-webkit-scrollbar-thumb {
-    border-radius: 20px;
-    background-color: $font-color-secondary;
-}
-::-webkit-scrollbar-track {
-    border-radius: 20px;
-    background-color: $font-color-primary;
-}
 body {
     background-color: $bg-primary;
     font-family: "Montserrat", sans-serif;
@@ -78,11 +63,6 @@ a {
     align-items: center;
 }
 
-@mixin skill-flex {
-    display: flex;
-    align-items: center;
-}
-
 .main-hd {
     margin: 2rem auto;
     position: relative;
@@ -109,6 +89,8 @@ span {
     font-size: 2.5rem;
     color: $font-color-secondary;
 }
+
+//scroll in out js lib custom attr
 
 [data-scroll] {
     transition: all 2s;

@@ -38,6 +38,7 @@
         transform: translateX(0);
     }
 }
+
 @keyframes movement {
     0% {
         bottom: 0;
@@ -46,6 +47,7 @@
         bottom: 50px;
     }
 }
+
 @keyframes movementr {
     100% {
         bottom: 0;
