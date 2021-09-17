@@ -2,8 +2,8 @@
 @import "animations";
 @import "scrollbar";
 @import "mixins";
-@import "media";
 
+//navigation bar for desktop version---------------------------------
 nav {
     text-align: center;
     position: fixed;
@@ -114,7 +114,7 @@ nav {
             }
         }
     }
-    //resume dwonlaod button from gdrive
+    //resume dwonlaod button from Gdrive
     .download {
         background-color: $font-color-secondary;
         position: absolute;
@@ -271,7 +271,7 @@ nav {
         }
     }
 }
-
+//about me and connect wiht me section...............................
 .aboutme {
     z-index: 10;
     height: 100vh;
@@ -331,7 +331,7 @@ nav {
         }
     }
 }
-
+// footer section-------------------------------------->
 footer {
     margin: 2rem 0 auto;
     background-color: $bg-primary;
