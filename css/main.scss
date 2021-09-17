@@ -48,7 +48,7 @@ nav {
             transform: translateY(-0.2rem);
         }
     }
-    animation: movementr 8s linear infinite alternate-reverse, heropopup 1s ease-in;
+    animation: movementr 4s linear infinite alternate-reverse, heropopup 1s ease-in;
     //animation: mailpopup .5s ease-in;
 }
 
@@ -65,7 +65,7 @@ nav {
         {
             position: relative;
             padding: 1rem;
-            animation: movement 8s linear infinite alternate-reverse, heropopup 1s ease-in;
+            animation: movement 4s linear infinite alternate-reverse, heropopup 1s ease-in;
             color: $font-color-primary;
             align-self: center;
             h3 {
@@ -113,7 +113,7 @@ nav {
     }
     //resume dwonlaod button from gdrive
     .download {
-        background-color: whitesmoke;
+        background-color: $font-color-secondary;
         position: absolute;
         top: 0;
         right: 10%;
@@ -121,7 +121,7 @@ nav {
         border-bottom-left-radius: 0.5rem;
         border-bottom-right-radius: 0.5rem;
         i {
-            color: $font-color-secondary;
+            color: white;
         }
         animation: downloadpopup 0.5s ease-in;
     }
