@@ -126,16 +126,16 @@
         <div class="container">
             <h1 class="main-hd">Skills</h1>
             <div class="skill-showcase">
-                <div class="flex-card">
+                <div class="flex-card" data-scroll>
                     <div><i class="fab fa-html5 fa-5x"></i></div>
                     <div><i class="fab fa-css3-alt fa-5x"></i></div>
                     <div><i class="fab fa-js fa-5x"></i></div>
                 </div>
-                <div class="flex-card">
+                <div class="flex-card" data-scroll>
                     <div><i class="fab fa-sass fa-5x"></i></div>
                     <div><i class="fab fa-bootstrap fa-5x"></i></div>
                 </div>
-                <div class="flex-card">
+                <div class="flex-card" data-scroll>
                     <div><i class="fab fa-github fa-5x"></i></div>
                 </div>
             </div>
@@ -186,7 +186,7 @@
                 </div>
             </div>
             <div class="copyright text-center">
-                <a href="#home"><img src="/img/icons/rocket.svg" alt=""></a>
+                <a href="#home" data-scroll><img src="/img/icons/rocket.svg" alt=""></a>
                 <p>&copy; Designed and Built by Aayush_Mishra</p>
             </div>
         </div>
@@ -195,7 +195,7 @@
     <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
     <script>
         ScrollOut({
-            once: true,
+            // once: true,
             threshold: .5
         });
     </script>

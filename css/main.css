@@ -106,14 +106,14 @@ span {
 
 [data-scroll="in"] {
   opacity: 1;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
 }
 
 [data-scroll="out"] {
   opacity: 0;
-  -webkit-transform: translateX(-100px);
-          transform: translateX(-100px);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 @-webkit-keyframes downloadpopup {
