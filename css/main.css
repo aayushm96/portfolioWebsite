@@ -79,7 +79,7 @@ a {
 .main-hd::after {
   content: "";
   display: block;
-  width: 40%;
+  width: 55px;
   text-align: center;
   height: 2px;
   background: #fca311;
