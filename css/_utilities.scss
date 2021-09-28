@@ -98,10 +98,10 @@ span {
 
 [data-scroll="in"] {
     opacity: 1;
-    transform: translateY(-10px);
+    transform: translateY(0);
 }
 
 [data-scroll="out"] {
     opacity: 0;
-    transform: translateY(0);
+    transform: translateY(-10px);
 }

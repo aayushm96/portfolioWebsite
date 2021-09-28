@@ -156,7 +156,23 @@ nav {
                 .main-img {
                     img {
                         object-fit: contain;
+                        display: none;
+                    }
+                    .img-active {
                         display: block;
+                    }
+                }
+                .slider {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 1rem;
+                    gap: 0.5rem;
+                    i {
+                        background-color: $bg-primary;
+                        color: $font-color-secondary;
+                        font-size: 1.5rem;
+                        cursor: pointer;
                     }
                 }
             }
