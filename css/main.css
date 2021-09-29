@@ -680,6 +680,7 @@ nav ul li i:hover {
 .aboutme .container .aboutme-showcase .quote {
   font-size: 1.5rem;
   color: #fca311;
+  margin-top: 6rem;
   margin-bottom: 6rem;
   letter-spacing: 2px;
 }
@@ -690,6 +691,7 @@ nav ul li i:hover {
   -ms-grid-columns: 2fr auto;
       grid-template-columns: 2fr auto;
   gap: 0.5rem;
+  padding: 1rem;
 }
 
 .aboutme .container .aboutme-showcase .aboutme-main .grid-left {

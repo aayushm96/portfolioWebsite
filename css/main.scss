@@ -324,6 +324,7 @@ nav {
             .quote {
                 font-size: 1.5rem;
                 color: $font-color-secondary;
+                margin-top: 6rem;
                 margin-bottom: 6rem;
                 letter-spacing: 2px;
             }
@@ -331,6 +332,7 @@ nav {
                 display: grid;
                 grid-template-columns: 2fr auto;
                 gap: 0.5rem;
+                padding: 1rem;
 
                 .grid-left {
                     color: $font-color-primary;
