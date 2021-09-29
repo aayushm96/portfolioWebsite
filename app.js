@@ -4,6 +4,16 @@ console.log(mainImg);
 const previewBtn = document.getElementById('previewbtn');
 // const previewBtn = document.querySelectorAll('.previewbtn');
 
+
+window.onload = function () {
+    var el = document.getElementById('preload');
+    console.log(el);
+    el.style.opacity = 0;
+
+    setTimeout(function () { el.style.display = 'none'; }, 2000);
+
+};
+
 console.log(previewBtn);
 
 let count = 0;
