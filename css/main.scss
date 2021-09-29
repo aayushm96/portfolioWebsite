@@ -135,13 +135,21 @@ nav {
     }
     //resume dwonlaod button from Gdrive
     .download {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
         background-color: $font-color-secondary;
         position: absolute;
         top: 0;
         right: 10%;
-        padding: 0.25rem;
+        padding: 0.5rem;
         border-bottom-left-radius: 0.5rem;
         border-bottom-right-radius: 0.5rem;
+        span {
+            color: $bg-secondary;
+            font-weight: 700;
+        }
         i {
             color: white;
         }
