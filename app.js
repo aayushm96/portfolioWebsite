@@ -20,14 +20,12 @@ let count = 0;
 sliderBox.addEventListener('click', (e) => {
     console.log(e.target);
 
-
-
-    mainImg.forEach(function (i) {
-        i.classList.remove('img-active');
-    })
     if (e.target.classList.contains('prevbtn')) {
-        console.log(e.target);
-        console.log(count, mainImg.length);
+        mainImg.forEach(function (i) {
+            i.classList.remove('img-active');
+        })
+        // console.log(e.target);
+        // console.log(count, mainImg.length);
         count--;
         if (count === -1) {
             count = 2;
@@ -35,7 +33,10 @@ sliderBox.addEventListener('click', (e) => {
         mainImg[count].classList.add('img-active')
     }
     if (e.target.classList.contains('nextbtn')) {
-        console.log(e.target);
+        mainImg.forEach(function (i) {
+            i.classList.remove('img-active');
+        })
+        // console.log(e.target);
         count++;
         if (count === mainImg.length) {
             count = 0;
