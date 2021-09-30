@@ -498,13 +498,13 @@ nav ul li i:hover {
   display: block;
 }
 
-.projects .container .project .project-screenshot .slider {
+.projects .container .project .project-screenshot #slider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -512,7 +512,7 @@ nav ul li i:hover {
   gap: 0.5rem;
 }
 
-.projects .container .project .project-screenshot .slider i {
+.projects .container .project .project-screenshot #slider i {
   background-color: #011f41;
   color: #fca311;
   font-size: 1.5rem;

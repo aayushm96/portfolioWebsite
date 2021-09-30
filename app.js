@@ -2,7 +2,7 @@
 
 window.onload = function () {
     var el = document.getElementById('preload');
-    console.log(el);
+    //console.log(el);
     el.style.opacity = 0;
 
     setTimeout(function () { el.style.display = 'none'; }, 2000);
@@ -10,26 +10,37 @@ window.onload = function () {
 };
 
 const mainImg = document.querySelectorAll('.img-preview');
-console.log(mainImg);
+// console.log(mainImg);
 
-const previewBtn = document.getElementById('previewbtn');
+const sliderBox = document.getElementById('slider');
 
-
+// console.log(sliderBox);
 let count = 0;
 
-previewBtn.addEventListener('click', (e) => {
+sliderBox.addEventListener('click', (e) => {
     console.log(e.target);
 
-    if (count === mainImg.length) {
-        count = 0;
-    }
-    console.log(count, mainImg.length);
+
+
     mainImg.forEach(function (i) {
         i.classList.remove('img-active');
     })
-
-
-    mainImg[count].classList.add('img-active')
-    count++;
+    if (e.target.classList.contains('prevbtn')) {
+        console.log(e.target);
+        console.log(count, mainImg.length);
+        count--;
+        if (count === -1) {
+            count = 2;
+        }
+        mainImg[count].classList.add('img-active')
+    }
+    if (e.target.classList.contains('nextbtn')) {
+        console.log(e.target);
+        count++;
+        if (count === mainImg.length) {
+            count = 0;
+        }
+        mainImg[count].classList.add('img-active')
+    }
 
 })
