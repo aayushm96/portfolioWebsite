@@ -498,7 +498,9 @@ nav ul li i:hover {
   display: block;
 }
 
-.projects .container .project .project-screenshot #slider {
+.projects .container .project .project-screenshot .slider-one,
+.projects .container .project .project-screenshot .slider-three,
+.projects .container .project .project-screenshot .slider-two {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -512,7 +514,9 @@ nav ul li i:hover {
   gap: 0.5rem;
 }
 
-.projects .container .project .project-screenshot #slider i {
+.projects .container .project .project-screenshot .slider-one i,
+.projects .container .project .project-screenshot .slider-three i,
+.projects .container .project .project-screenshot .slider-two i {
   background-color: #011f41;
   color: #fca311;
   font-size: 1.5rem;

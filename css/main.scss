@@ -189,7 +189,9 @@ nav {
                         display: block;
                     }
                 }
-                #slider {
+                .slider-one,
+                .slider-three,
+                .slider-two {
                     display: flex;
                     justify-content: center;
                     align-items: center;
