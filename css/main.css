@@ -500,7 +500,8 @@ nav ul li i:hover {
 
 .projects .container .project .project-screenshot .slider-one,
 .projects .container .project .project-screenshot .slider-three,
-.projects .container .project .project-screenshot .slider-two {
+.projects .container .project .project-screenshot .slider-two,
+.projects .container .project .project-screenshot .slider {
   width: 45%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -517,7 +518,8 @@ nav ul li i:hover {
 
 .projects .container .project .project-screenshot .slider-one i,
 .projects .container .project .project-screenshot .slider-three i,
-.projects .container .project .project-screenshot .slider-two i {
+.projects .container .project .project-screenshot .slider-two i,
+.projects .container .project .project-screenshot .slider i {
   background-color: #011f41;
   color: #fca311;
   font-size: 1.5rem;
