@@ -1,0 +1,63 @@
+@media screen and (max-width: 800px) {
+    .container {
+        max-width: 93vw;
+    }
+    .main-hd {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .quote {
+        font-size: 2rem;
+    }
+    nav {
+        display: none; //for mobile screen
+        overflow: visible;
+        width: 0;
+    }
+    nav li i {
+        overflow: visible;
+    }
+    .mail {
+        right: -0.5rem;
+    }
+    .skills .container .skill-showcase .flex-card:nth-child(1),
+    .skills .container .skill-showcase .flex-card:nth-child(2),
+    .skills .container .skill-showcase .flex-card:nth-child(3) {
+        width: 80vw;
+    }
+
+    .projects .container .project {
+        display: block;
+    }
+    .projects .container .project-details {
+        position: relative;
+        width: auto;
+        margin-bottom: 1.5rem;
+        //background-color: transparent;
+    }
+    .projects .container .project-details > * {
+        margin-bottom: 0.5rem;
+    }
+    .projects .container .project-details .project-view {
+        justify-content: space-between;
+    }
+    .aboutme {
+        height: auto;
+    }
+    .aboutme .container .aboutme-showcase .aboutme-main {
+        grid-template-columns: 1fr;
+    }
+    .aboutme .container .aboutme-showcase .aboutme-main .grid-left {
+        list-style: square;
+        text-align: center;
+    }
+    footer {
+        height: 80vh;
+    }
+    footer .box {
+        height: 70vh;
+    }
+    footer .copyright {
+        height: 10vh;
+    }
+}

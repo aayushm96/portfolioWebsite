@@ -657,9 +657,9 @@ nav ul li i:hover {
       -ms-flex-align: center;
           align-items: center;
   width: 40vw;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .skills .container .skill-showcase .flex-card:nth-child(3) {
@@ -670,9 +670,15 @@ nav ul li i:hover {
       -ms-flex-align: center;
           align-items: center;
   width: 40vw;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.skills .container .skill-showcase .flex-card div {
+  width: 100px;
+  height: 80px;
+  text-align: center;
 }
 
 .aboutme {
