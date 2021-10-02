@@ -192,10 +192,11 @@ nav {
                 .slider-one,
                 .slider-three,
                 .slider-two {
+                    width: 45%;
                     display: flex;
-                    justify-content: center;
+                    justify-content: space-between;
                     align-items: center;
-                    margin: 1rem 0;
+                    margin: 1rem auto;
                     gap: 0.5rem;
                     i {
                         background-color: $bg-primary;

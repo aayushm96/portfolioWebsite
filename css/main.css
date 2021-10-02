@@ -501,16 +501,17 @@ nav ul li i:hover {
 .projects .container .project .project-screenshot .slider-one,
 .projects .container .project .project-screenshot .slider-three,
 .projects .container .project .project-screenshot .slider-two {
+  width: 45%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 1rem 0;
+  margin: 1rem auto;
   gap: 0.5rem;
 }
 
