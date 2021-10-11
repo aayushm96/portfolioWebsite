@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  background-color: #011f41;
+  background-color: #0a192f;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -73,7 +73,7 @@ a {
   margin: 2rem auto;
   position: relative;
   font-size: 3rem;
-  color: #ccd6f6;
+  color: #f4f4f4;
 }
 
 .main-hd::after {
@@ -354,7 +354,7 @@ nav ul li i:hover {
 }
 
 .hero {
-  background-color: #011f41;
+  background-color: #0a192f;
 }
 
 .hero .container {
@@ -463,7 +463,7 @@ nav ul li i:hover {
 
 .projects {
   color: #ccd6f6;
-  background-color: #011f41;
+  background-color: #0a192f;
 }
 
 .projects .container .project {
@@ -520,7 +520,7 @@ nav ul li i:hover {
 .projects .container .project .project-screenshot .slider-three i,
 .projects .container .project .project-screenshot .slider-two i,
 .projects .container .project .project-screenshot .slider i {
-  background-color: #011f41;
+  background-color: #0a192f;
   color: #fca311;
   font-size: 1.5rem;
   cursor: pointer;
@@ -539,7 +539,7 @@ nav ul li i:hover {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  background-color: #20272e98;
+  background-color: #112240;
 }
 
 .projects .container .project-details h2 {
@@ -600,7 +600,7 @@ nav ul li i:hover {
   margin-top: 4rem;
   margin-bottom: 4rem;
   padding: 0.5rem;
-  background-color: #011f41;
+  background-color: #0a192f;
   color: #ccd6f6;
   font-size: 2rem;
   border: 2px #ccd6f6 solid;
@@ -617,7 +617,7 @@ nav ul li i:hover {
 }
 
 .skills {
-  background-color: #011f41;
+  background-color: #0a192f;
 }
 
 .skills .container {
@@ -687,7 +687,7 @@ nav ul li i:hover {
 .aboutme {
   z-index: 10;
   height: 100vh;
-  background-color: #011f41;
+  background-color: #0a192f;
 }
 
 .aboutme .container .aboutme-showcase .quote {
@@ -753,12 +753,12 @@ nav ul li i:hover {
   min-width: 36px;
   vertical-align: middle;
   margin-right: 0.25rem;
-  color: #011f41;
+  color: #0a192f;
 }
 
 footer {
   margin: 2rem 0 auto;
-  background-color: #011f41;
+  background-color: #0a192f;
 }
 
 footer .container .footer-animation .box {

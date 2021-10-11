@@ -1,9 +1,9 @@
-$bg-primary: #011f41;
+$bg-primary: #0a192f;
 $bg-secondary: #111;
 $font-color-primary: #ccd6f6;
 $font-color-secondary: #fca311;
 $color-card: #111;
-$project-card: #20272e98;
+$project-card: #112240;
 
 *,
 *::after,
@@ -67,7 +67,7 @@ a {
     margin: 2rem auto;
     position: relative;
     font-size: 3rem;
-    color: $font-color-primary;
+    color: #f4f4f4;
     &::after {
         content: "";
         display: block;
