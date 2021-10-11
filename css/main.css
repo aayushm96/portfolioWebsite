@@ -252,11 +252,6 @@ span {
   width: 10px;
 }
 
-::-webkit-scrollbar-button {
-  border-radius: 20px;
-  background-color: #fca311;
-}
-
 ::-webkit-scrollbar-thumb {
   border-radius: 20px;
   background-color: #fca311;

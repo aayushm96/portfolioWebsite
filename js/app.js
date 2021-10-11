@@ -4,7 +4,7 @@ window.onload = function () {
     //console.log(el);
     el.style.opacity = 0;
 
-    setTimeout(function () { el.style.display = 'none'; }, 2000);
+    setTimeout(() => el.style.display = 'none', 2000);
 
 };
 
