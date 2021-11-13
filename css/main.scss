@@ -431,6 +431,10 @@ footer {
     }
 }
 
+.reactrotate {
+    animation: rotation 10s infinite linear;
+}
+
 //media queries-------------------------------------------->
 
 @import "mediaqueries";

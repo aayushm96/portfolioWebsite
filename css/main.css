@@ -248,6 +248,28 @@ span {
   }
 }
 
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -798,6 +820,11 @@ footer .container .copyright p {
   margin-top: 2rem;
   margin-bottom: 2rem;
   color: #ccd6f6;
+}
+
+.reactrotate {
+  -webkit-animation: rotation 10s infinite linear;
+          animation: rotation 10s infinite linear;
 }
 
 @media screen and (max-width: 800px) {
